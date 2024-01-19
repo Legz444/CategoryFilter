@@ -44,20 +44,29 @@
     box-shadow: 5px 5px 5px lightgray;
     width: 25em;
     margin: 1em;
-    transition: 2s;
+    transition: 1s;
 }
 .blog_items_container .blog_item img{
     width: 23em;
     height: 18em;
     margin: 1em;
     border-radius: 0.2em;
-    transition: 2s;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
 }
 
 .blog_item.img_expand{
     width: 25em;
     margin: 1em;
-
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
 .blog_item.img_shrink {
